@@ -173,7 +173,7 @@ public typealias AKCallback = (Void) -> Void
 
                 }
             #if os(iOS)
-                try AVAudioSession.sharedInstance().setActive(true)
+                //try AVAudioSession.sharedInstance().setActive(true)
             #endif
 
             #endif
@@ -193,11 +193,11 @@ public typealias AKCallback = (Void) -> Void
         self.engine.stop()
         shouldBeRunning = false
         #if os(iOS)
-        do {
+        /*do {
             try AVAudioSession.sharedInstance().setActive(false)
         } catch {
             print("couldn't stop session \(error)")
-        }
+        }*/
         #endif
     }
 
