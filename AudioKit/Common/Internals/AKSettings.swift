@@ -170,6 +170,9 @@
     /// Enable AudioKit AVAudioSession Category Management
     @objc open static var disableAVAudioSessionCategoryManagement: Bool = false
 
+    /// If set to true, AudioKit will no deactivate the AVAudioSession when stopping
+    @objc open static var disableAudioSessionDeactivationOnStop: Bool = false
+    
     /// If set to false, AudioKit will not handle the AVAudioSession route change
     /// notification (AVAudioSessionRouteChange) and will not restart the AVAudioEngine
     /// instance when such notifications are posted. The developer can instead subscribe
